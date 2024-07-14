@@ -38,7 +38,7 @@ def split_dataset(df):
 class DiabetesDataset(Dataset):
     def __init__(self, data_df):
         super().__init__()
-        # Convert training data to a NumPy array and assign to self.train_data
+        # Convert training data to a NumPy array and assign to self.data
         self.data = data_df.to_numpy()
 
     # Implement __len__ to return the number of data samples
